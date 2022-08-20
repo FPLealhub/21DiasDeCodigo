@@ -59,7 +59,7 @@
           <span class="text-2">@f.p.leal</span>
         </a>
 
-        <!--<a href="#dia4" class="button-down">
+        <a href="#dia4" class="button-down">
           <svg class="icon icon-arrow-down2">
             <use xlink:href="#icon-arrow-down2">
               <symbol id="icon-arrow-down2" viewBox="0 0 32 32">
@@ -69,8 +69,77 @@
               </symbol>
             </use>
           </svg>
-        </a> -->
+        </a>
+      </section>
+
+      <!--Dia 4 - Calculadora-->
+
+      <section id="dia4">
+        <a href="#dia3" class="button-up">
+          <svg class="icon icon-arrow-up2">
+            <use xlink:href="#icon-arrow-up2">
+              <symbol id="icon-arrow-up2" viewBox="0 0 32 32">
+                <path
+                  d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"
+                ></path>
+              </symbol>
+            </use>
+          </svg>
+        </a>
+        <div class="calculadora">
+          <h1>Calculadora</h1>
+          <p id="resultado"></p>
+          <table>
+            <tr>
+              <td><button class="botao" onclick="clean()">C</button></td>
+              <td><button class="botao" onclick="back()"><</button></td>
+              <td><button class="botao" onclick="insert('/')">/</button></td>
+              <td><button class="botao" onclick="insert('*')">X</button></td>
+            </tr>
+            <tr>
+              <td><button class="botao" onclick="insert('7')">7</button></td>
+              <td><button class="botao" onclick="insert('8')">8</button></td>
+              <td><button class="botao" onclick="insert('9')">9</button></td>
+              <td><button class="botao" onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+              <td><button class="botao" onclick="insert('4')">4</button></td>
+              <td><button class="botao" onclick="insert('5')">5</button></td>
+              <td><button class="botao" onclick="insert('6')">6</button></td>
+              <td><button class="botao" onclick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+              <td><button class="botao" onclick="insert('1')">1</button></td>
+              <td><button class="botao" onclick="insert('2')">2</button></td>
+              <td><button class="botao" onclick="insert('3')">3</button></td>
+              <td rowspan="2">
+                <button
+                  class="botao"
+                  style="height: 106px"
+                  onclick="calcular()"
+                >
+                  =
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button
+                  class="botao"
+                  style="width: 106px"
+                  onclick="insert('0')"
+                >
+                  0
+                </button>
+              </td>
+              <td><button class="botao" onclick="insert('.')">.</button></td>
+            </tr>
+          </table>
+        </div>
       </section>
     </main>
+
+    <!--Calculadora-->
+    <script src="./scripts/calculator.js"></script>
   </body>
 </html>
