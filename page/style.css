@@ -7,11 +7,11 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
 }
 
 section {
@@ -200,11 +200,11 @@ section {
     rgba(48, 238, 226, 1) 68%,
     rgba(255, 25, 25, 1) 98%
   );
-  overflow: auto;
 
   animation: gradient 15s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 @keyframes gradient {
@@ -224,7 +224,7 @@ section {
 .wave {
   background: rgb(255 255 255 / 25%);
   border-radius: 1000% 1000% 0 0;
-  position: fixed;
+  position: absolute;
   width: 200%;
   height: 12em;
   animation: wave 10s -3s linear infinite;
@@ -232,7 +232,6 @@ section {
   opacity: 0.8;
   bottom: 0;
   left: 0;
-  z-index: -1;
 }
 
 .wave:nth-of-type(2) {
@@ -286,4 +285,79 @@ section {
 
 #dia5 .fios img {
   width: 40rem;
+}
+
+/*-----------dia 6 - efeito glassmorphism----------*/
+#dia6 {
+  background-color: #292929;
+  position: relative;
+}
+
+#dia6 .modal {
+  width: 500px;
+  height: 500px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+  z-index: 1;
+
+  padding: 20px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#dia6 .modal img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 3px solid #b400fb;
+  margin-bottom: 20px;
+}
+
+#dia6 .modal h2 {
+  font-size: 30px;
+}
+
+#dia6 .modal p {
+  color: white;
+  font-size: 13px;
+}
+
+.ball {
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(#00e5ff, #b400fb);
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.balls .ball:nth-child(1) {
+  top: -150px;
+  left: -150px;
+  height: 300px;
+  width: 300px;
+}
+
+.balls .ball:nth-child(2) {
+  bottom: -150px;
+  right: -150px;
+  height: 500px;
+  width: 500px;
+}
+
+.button-up,
+.button-down {
+  z-index: 2;
 }
