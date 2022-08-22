@@ -266,36 +266,35 @@ section {
 }
 
 #dia5 .fios {
-  width: 100%;
   height: 40rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
 }
 
 #dia5 .fios h1 {
-  font-size: 25rem;
+  font-size: 10rem;
+  margin-inline: auto;
 }
 
 #dia5 .fios h3 {
-  font-size: 4rem;
   width: fit-content;
   margin-inline: auto;
 }
 
 #dia5 .fios img {
-  width: 40rem;
+  width: 10rem;
 }
 
 /*-----------dia 6 - efeito glassmorphism----------*/
 #dia6 {
   background-color: #292929;
-  position: relative;
 }
 
 #dia6 .modal {
-  width: 500px;
-  height: 500px;
+  width: 35rem;
+  height: 35rem;
 
   display: flex;
   align-items: center;
@@ -305,38 +304,38 @@ section {
   position: relative;
   z-index: 1;
 
-  padding: 20px;
+  padding: 2rem;
   text-align: center;
 
   background: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(13.5px);
   -webkit-backdrop-filter: blur(13.5px);
 
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.18);
 }
 
 #dia6 .modal img {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  border: 3px solid #b400fb;
+  border: 0.3rem solid #b400fb;
   margin-bottom: 20px;
 }
 
 #dia6 .modal h2 {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 #dia6 .modal p {
   color: white;
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .ball {
-  height: 100px;
-  width: 100px;
+  height: 10rem;
+  width: 10rem;
   background: linear-gradient(#00e5ff, #b400fb);
   position: absolute;
   border-radius: 50%;
@@ -344,20 +343,69 @@ section {
 }
 
 .balls .ball:nth-child(1) {
-  top: -150px;
-  left: -150px;
-  height: 300px;
-  width: 300px;
+  top: -15rem;
+  left: -15rem;
+  height: 30rem;
+  width: 30rem;
 }
 
 .balls .ball:nth-child(2) {
-  bottom: -150px;
-  right: -150px;
-  height: 500px;
-  width: 500px;
+  bottom: -15rem;
+  right: -15rem;
+  height: 50rem;
+  width: 50rem;
 }
 
 .button-up,
 .button-down {
   z-index: 2;
+}
+
+/*----------dia 7 - Contador ----------------*/
+#dia7 {
+  gap: 2rem;
+}
+#dia7 h1 {
+  font-size: 5rem;
+}
+#dia7 .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+#dia7 .buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.392);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.5s;
+}
+
+#dia7 .buttons button:hover {
+  width: 100px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.392);
+  cursor: pointer;
+}
+
+#dia7 .buttons button:hover::after {
+  margin-left: 0.5rem;
+}
+
+#dia7 .buttons button:nth-child(1):hover::after {
+  content: 'Iniciar';
+}
+
+#dia7 .buttons button:nth-child(2):hover::after {
+  content: 'Parar';
+}
+
+#dia7 .buttons button:nth-child(3):hover::after {
+  content: 'Reset';
 }

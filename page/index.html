@@ -230,10 +230,53 @@
         </a>
       </section>
 
-      <section id="dia7"></section>
+      <section id="dia7">
+        <h1 id="counter">25:00</h1>
+        <div class="buttons">
+          <button onclick="start()" id="bg-green">
+            <svg class="icon icon-play2">
+              <use xlink:href="#icon-play2">
+                <symbol id="icon-play2" viewBox="0 0 32 32">
+                  <path
+                    d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13zM12 9l12 7-12 7z"
+                  ></path>
+                </symbol>
+              </use>
+            </svg>
+          </button>
+          <button onclick="stop()" id="bg-yellow">
+            <svg class="icon icon-stop">
+              <use xlink:href="#icon-stop">
+                <symbol id="icon-stop" viewBox="0 0 32 32">
+                  <path
+                    d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13zM10 10h12v12h-12z"
+                  ></path>
+                </symbol>
+              </use>
+            </svg>
+          </button>
+          <button onclick="reset()" id="bg-red">
+            <svg class="icon icon-reload-alt">
+              <use xlink:href="#icon-reload-alt">
+                <symbol id="icon-reload-alt" viewBox="0 0 32 32">
+                  <path
+                    d="M24 18c0 4.414-3.586 8-8 8s-8-3.586-8-8 3.586-8 8-8h4l0.023 4.020 6.012-6.020-6.012-6v4h-4.023c-6.625 0-12 5.375-12 12s5.375 12 12 12 12-5.375 12-12h-4z"
+                  ></path>
+                </symbol>
+              </use>
+            </svg>
+          </button>
+
+          <audio src="../audio/toque-sino-curto.mp3"></audio>
+        </div>
+      </section>
     </main>
 
     <!--Calculadora-->
+
     <script src="./scripts/calculator.js"></script>
+
+    <!--Cronômetro-->
+    <script src="./scripts/cronometro.js"></script>
   </body>
 </html>
