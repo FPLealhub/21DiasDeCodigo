@@ -464,3 +464,44 @@ section {
 #dia8.dark label:after {
   background-color: grey;
 }
+
+/*---------dia 9 - loading----------*/
+#dia9 {
+  background-image: url('https://img.freepik.com/vetores-gratis/conceito-realista-arco-iris-colorido_52683-35882.jpg?w=996&t=st=1661370442~exp=1661371042~hmac=2bc47198b856da232c8474b515bc77b45827974ec4fa18143e9b8cbdb22b4bd2');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#dia9 .loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 15rem;
+  height: 15rem;
+  margin: -7.5rem 0 0 -7.5rem;
+  border: 1.6rem solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 1.6rem solid #3498db;
+  width: 12rem;
+  height: 12rem;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
