@@ -507,6 +507,15 @@ section {
 }
 
 /*------------particle.js - Dia 10---------------*/
-#dia10 {
+#particles-js {
   background-color: #131313;
+}
+
+#particles-js .modal h1 {
+  position: absolute;
+  left: 50%;
+
+  font-size: 3rem;
+
+  color: white;
 }
