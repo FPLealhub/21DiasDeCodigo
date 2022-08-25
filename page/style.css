@@ -505,3 +505,8 @@ section {
     transform: rotate(360deg);
   }
 }
+
+/*------------particle.js - Dia 10---------------*/
+#dia10 {
+  background-color: #131313;
+}
