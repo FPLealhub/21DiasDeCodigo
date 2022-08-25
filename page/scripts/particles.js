@@ -1,6 +1,6 @@
 tsParticles.load('dia10', {
   background: {
-    color: '#191970'
+    color: '#b400fb'
   },
   particles: {
     links: {
