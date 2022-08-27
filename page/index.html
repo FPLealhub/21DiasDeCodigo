@@ -19,6 +19,11 @@
       type="image/x-icon"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -397,6 +402,19 @@
       <!--Dia 11 - fomulário-->
 
       <section id="dia11">
+        <!--Botão para page anterior-->
+        <a href="#particles-js" class="button-up">
+          <svg class="icon icon-arrow-up2">
+            <use xlink:href="#icon-arrow-up2">
+              <symbol id="icon-arrow-up2" viewBox="0 0 32 32">
+                <path
+                  d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"
+                ></path>
+              </symbol>
+            </use>
+          </svg>
+        </a>
+
         <form action="">
           <label class="sr-only" for="mail">Email</label>
           <input
@@ -411,6 +429,61 @@
           <button type="submit">Entrar</button>
           <footer>@LealDev</footer>
         </form>
+
+        <a href="#dia12" class="button-down">
+          <svg class="icon icon-arrow-down2">
+            <use xlink:href="#icon-arrow-down2">
+              <symbol id="icon-arrow-down2" viewBox="0 0 32 32">
+                <path
+                  d="M27.414 19.414l-10 10c-0.781 0.781-2.047 0.781-2.828 0l-10-10c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0l6.586 6.586v-19.172c0-1.105 0.895-2 2-2s2 0.895 2 2v19.172l6.586-6.586c0.39-0.39 0.902-0.586 1.414-0.586s1.024 0.195 1.414 0.586c0.781 0.781 0.781 2.047 0 2.828z"
+                ></path>
+              </symbol>
+            </use>
+          </svg>
+        </a>
+      </section>
+
+      <!--Dia 12 - galery-->
+      <section id="dia12">
+        <!--Botão para page anterior-->
+        <a href="#dia11" class="button-up">
+          <svg class="icon icon-arrow-up2">
+            <use xlink:href="#icon-arrow-up2">
+              <symbol id="icon-arrow-up2" viewBox="0 0 32 32">
+                <path
+                  d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"
+                ></path>
+              </symbol>
+            </use>
+          </svg>
+        </a>
+        <h1>Arraste para o lado -></h1>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1661604209889-00bd323c1487?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="Mulher em um lago ao lado de uma cachoeira"
+              />
+
+              <!--<h2>Arraste para o lado -></h2> -->
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1661607542080-9c723b4dee5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="imagem de uma cidade"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://images.unsplash.com/photo-1661524093658-c30b203de445?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                alt="imagem do céu a noite com estrelas"
+              />
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
     </main>
 
@@ -428,5 +501,10 @@
 
     <script src="./scripts/particle/particles.js"></script>
     <script src="./scripts/particle/app.js"></script>
+
+    <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="./scripts/swiper.js"></script>
   </body>
 </html>

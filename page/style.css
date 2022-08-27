@@ -540,7 +540,7 @@ section {
   border-width: 0;
 }
 
-form {
+#dia11 form {
   background-color: var(--purple);
   width: 35rem;
   height: 40rem;
@@ -554,7 +554,7 @@ form {
   gap: 1rem;
 }
 
-form button {
+#dia11 form button {
   width: 55%;
   background-color: var(--purple);
   color: white;
@@ -564,11 +564,44 @@ form button {
   transition: filter 0.2s;
 }
 
-form button:hover {
+#dia11 form button:hover {
   filter: brightness(1.2);
 }
 
-form input {
+#dia11 form input {
   padding: 1rem;
   border-radius: 1rem;
+}
+/*------------------dia 12 - galeriaa---------------*/
+
+#dia12 {
+  display: inline-block;
+  background-color: grey;
+  text-align: center;
+}
+
+#dia12 h1 {
+  margin-top: 20rem;
+}
+/*swiper*/
+.swiper-slide {
+  height: 40rem;
+  padding: 4rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+
+  background-color: white;
+}
+
+.swiper-slide img {
+  border: 10px solid black;
+  border-radius: 0.7rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(167, 60, 206);
 }
