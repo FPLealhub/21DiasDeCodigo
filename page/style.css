@@ -10,6 +10,11 @@ html {
   overflow-x: hidden;
 }
 
+:root {
+  --body-bg-color: #faf7fd;
+  --purple: #bb99dd;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -518,4 +523,52 @@ section {
   font-size: 3rem;
 
   color: white;
+}
+
+/*-------------------Dia 11 - formulário---------------*/
+/*para esconder labels*/
+
+.sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+form {
+  background-color: var(--purple);
+  width: 35rem;
+  height: 40rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+form button {
+  width: 55%;
+  background-color: var(--purple);
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+  transition: filter 0.2s;
+}
+
+form button:hover {
+  filter: brightness(1.2);
+}
+
+form input {
+  padding: 1rem;
+  border-radius: 1rem;
 }
