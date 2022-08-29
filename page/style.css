@@ -13,6 +13,13 @@ html {
 :root {
   --body-bg-color: #faf7fd;
   --purple: #bb99dd;
+
+  /*menu colors*/
+  --body-bg-color-menu: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+  --light-grey: #dce4e3;
+  --text-color: #084236;
 }
 
 body {
@@ -581,7 +588,7 @@ section {
 }
 
 #dia12 h1 {
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 /*swiper*/
 .swiper-slide {
@@ -604,4 +611,149 @@ section {
 
 .swiper-pagination-bullet-active {
   background-color: rgb(167, 60, 206);
+}
+
+/*------------------dia 13 - menu responsivo-----------------*/
+#dia13 {
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+
+  background-color: var(--body-bg-color-menu);
+}
+
+#dia13 .menu {
+  position: relative;
+  left: 0;
+  width: 7.8rem;
+  height: 100%;
+  background-color: var(--green);
+
+  transition: all 0.3s;
+}
+
+#dia13 .menu .menu-list {
+  margin-top: 2.6rem;
+  position: absolute;
+  left: 2.7rem;
+  /*display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;*/
+}
+
+#dia13 button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#dia13 .menu-list button {
+  margin-bottom: 2.6rem;
+}
+
+#dia13 .menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+#dia13 .menu ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+#dia13 .menu ul,
+#dia13 .menu .menu-list {
+  gap: 2.1rem;
+}
+
+#dia13 .menu ul li,
+#dia13 .menu ul {
+  width: fit-content;
+}
+
+#dia13 .menu.open {
+  width: 25rem;
+}
+
+#dia13 .menu ul li span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-color);
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.2s;
+}
+
+#dia13 .menu.open ul li span {
+  visibility: visible;
+  opacity: 1;
+}
+
+#dia13 .menu footer {
+  height: 6rem;
+  position: absolute;
+  bottom: 0;
+
+  background-color: var(--light-green);
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#dia13 .menu footer .user {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+
+  transition: all 0.2s;
+}
+
+#dia13 .menu.open footer .user {
+  visibility: visible;
+  opacity: 1;
+}
+
+#dia13 .menu footer button {
+  padding: 1.8rem 2.8rem;
+  position: relative;
+  z-index: 2;
+}
+
+#dia13 .menu.open footer button {
+  padding: 0;
+}
+
+#dia13 .menu.open footer .user {
+  position: initial;
+}
+
+#dia13 .menu footer .user img {
+  width: 4.5rem;
+  border-radius: 1.2rem;
+}
+
+#dia13 .menu.open footer {
+  padding-inline: 1.4rem;
+}
+
+#dia13 h2 {
+  height: fit-content;
+  color: var(--text-color);
+  font-size: 2.5rem;
+  margin-top: 1.8rem;
+  margin-left: 2rem;
 }

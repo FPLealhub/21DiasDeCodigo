@@ -484,6 +484,87 @@
 
           <div class="swiper-pagination"></div>
         </div>
+
+        <!--Próxima página-->
+        <a href="#dia13" class="button-down">
+          <svg class="icon icon-arrow-down2">
+            <use xlink:href="#icon-arrow-down2">
+              <symbol id="icon-arrow-down2" viewBox="0 0 32 32">
+                <path
+                  d="M27.414 19.414l-10 10c-0.781 0.781-2.047 0.781-2.828 0l-10-10c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0l6.586 6.586v-19.172c0-1.105 0.895-2 2-2s2 0.895 2 2v19.172l6.586-6.586c0.39-0.39 0.902-0.586 1.414-0.586s1.024 0.195 1.414 0.586c0.781 0.781 0.781 2.047 0 2.828z"
+                ></path>
+              </symbol>
+            </use>
+          </svg>
+        </a>
+      </section>
+
+      <!--menu responsivo - dia 13-->
+      <section id="dia13">
+        <div class="menu">
+          <div class="menu-list">
+            <button onclick="openMenu()">
+              <img
+                src="../assets/sidebar/menu.svg"
+                alt="butão para expandir o menu/fechar o menu"
+              />
+            </button>
+            <ul>
+              <li class="active">
+                <img
+                  src="../assets/sidebar/search.svg"
+                  alt="botão de pesquisa"
+                />
+                <span>Buscar</span>
+              </li>
+              <li>
+                <img
+                  src="../assets/sidebar/grid.svg"
+                  alt="botão do dashboard"
+                />
+                <span>Dashboad</span>
+              </li>
+              <li>
+                <img src="../assets/sidebar/pet.svg" alt="botão dos pets" />
+                <span>Pets</span>
+              </li>
+              <li>
+                <img
+                  src="../assets/sidebar/user.svg"
+                  alt="botão dos clientes"
+                />
+                <span>Clientes</span>
+              </li>
+              <li>
+                <img src="../assets/sidebar/vet.svg" alt="botão dos vets" />
+                <span>Vets</span>
+              </li>
+              <li>
+                <img
+                  src="../assets/sidebar/settings.svg"
+                  alt="botão das configurações"
+                />
+                <span>Ajustes</span>
+              </li>
+            </ul>
+          </div>
+
+          <footer>
+            <div class="user">
+              <img src="../assets/sidebar/photo.jpg" alt="foto da usuária" />
+              <div class="user-info">
+                <span>Eleanor Pena</span>
+                <p>Veterinária</p>
+              </div>
+            </div>
+
+            <button>
+              <img src="../assets/sidebar/log-out.svg" alt="botão log-out" />
+            </button>
+          </footer>
+        </div>
+
+        <h2>Dashboard</h2>
       </section>
     </main>
 
@@ -506,5 +587,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="./scripts/swiper.js"></script>
+
+    <!--menu responsivo - dia 13-->
+    <script src="./scripts/menu.js"></script>
   </body>
 </html>
