@@ -532,6 +532,11 @@ section {
   color: white;
 }
 
+#particles-js .icon {
+  fill: white;
+  stroke: white;
+}
+
 /*-------------------Dia 11 - formulário---------------*/
 /*para esconder labels*/
 
@@ -629,7 +634,7 @@ section {
   height: 100%;
   background-color: var(--green);
 
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 #dia13 .menu .menu-list {
@@ -756,4 +761,47 @@ section {
   font-size: 2.5rem;
   margin-top: 1.8rem;
   margin-left: 2rem;
+}
+
+/*----------------Dia 14 - quiz----------------------*/
+#dia14 {
+  font-size: 1.6rem;
+  color: white;
+  background-color: black;
+}
+
+#dia14 .quiz {
+  border: 1px solid white;
+  border-radius: 0.8rem;
+  padding: 2rem;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+#dia14 .quiz header {
+  margin-bottom: 1rem;
+}
+
+#dia14 .quiz header h3 {
+  color: black;
+}
+
+#dia14 .quiz header h3::before {
+  content: '';
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  z-index: -1;
+}
+
+#dia14 .icon {
+  fill: white;
+  stroke: white;
 }

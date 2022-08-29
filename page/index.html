@@ -501,6 +501,19 @@
 
       <!--menu responsivo - dia 13-->
       <section id="dia13">
+        <!--pagina anterior-->
+        <a href="#dia12" class="button-up">
+          <svg class="icon icon-arrow-up2">
+            <use xlink:href="#icon-arrow-up2">
+              <symbol id="icon-arrow-up2" viewBox="0 0 32 32">
+                <path
+                  d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"
+                ></path>
+              </symbol>
+            </use>
+          </svg>
+        </a>
+
         <div class="menu">
           <div class="menu-list">
             <button onclick="openMenu()">
@@ -565,6 +578,56 @@
         </div>
 
         <h2>Dashboard</h2>
+
+        <!--Próxima página-->
+        <a href="#dia14" class="button-down">
+          <svg class="icon icon-arrow-down2">
+            <use xlink:href="#icon-arrow-down2">
+              <symbol id="icon-arrow-down2" viewBox="0 0 32 32">
+                <path
+                  d="M27.414 19.414l-10 10c-0.781 0.781-2.047 0.781-2.828 0l-10-10c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0l6.586 6.586v-19.172c0-1.105 0.895-2 2-2s2 0.895 2 2v19.172l6.586-6.586c0.39-0.39 0.902-0.586 1.414-0.586s1.024 0.195 1.414 0.586c0.781 0.781 0.781 2.047 0 2.828z"
+                ></path>
+              </symbol>
+            </use>
+          </svg>
+        </a>
+      </section>
+
+      <!--dia 14 - quiz-->
+      <section id="dia14">
+        <a href="#dia12" class="button-up">
+          <svg class="icon icon-arrow-up2">
+            <use xlink:href="#icon-arrow-up2">
+              <symbol id="icon-arrow-up2" viewBox="0 0 32 32">
+                <path
+                  d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"
+                ></path>
+              </symbol>
+            </use>
+          </svg>
+        </a>
+        <div class="quiz-wrapper">
+          <div class="quiz">
+            <header>
+              <h3>Quanto é 2 + 2?</h3>
+            </header>
+
+            <div class="option">
+              <input type="radio" name="opt" id="opt1" value="3" />
+              <label for="opt1">3</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="opt" id="opt2" value="5" />
+              <label for="opt2">5</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="opt" id="opt3" value="4" />
+              <label for="opt3">4</label>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -590,5 +653,7 @@
 
     <!--menu responsivo - dia 13-->
     <script src="./scripts/menu.js"></script>
+    <!--quiz - dia 14-->
+    <script src="./scripts/quiz.js"></script>
   </body>
 </html>
