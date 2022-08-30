@@ -1,4 +1,4 @@
-const erradaDois = document.querySelectorAll('input')
+const erradaDois = document.querySelectorAll('#dia14 input')
 
 erradaDois.forEach(button => {
   button.addEventListener('click', () => {

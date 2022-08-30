@@ -596,7 +596,7 @@ section {
   margin-top: 10rem;
 }
 /*swiper*/
-.swiper-slide {
+#dia12 .swiper-slide {
   height: 40rem;
   padding: 4rem 1rem;
 
@@ -609,12 +609,12 @@ section {
   background-color: white;
 }
 
-.swiper-slide img {
+#dia12 .swiper-slide img {
   border: 10px solid black;
   border-radius: 0.7rem;
 }
 
-.swiper-pagination-bullet-active {
+#dia12 .swiper-pagination-bullet-active {
   background-color: rgb(167, 60, 206);
 }
 
@@ -804,4 +804,303 @@ section {
 #dia14 .icon {
   fill: white;
   stroke: white;
+}
+/*---------------------DIA 15 - PÁGINA DE PRODUTO E-COMMERCE----------*/
+#dia15 {
+  display: initial;
+  align-items: initial;
+  justify-content: initial;
+}
+
+#dia15 .wrapper {
+  height: 100vh;
+  width: min(119rem, 90%);
+  margin-inline: auto;
+  /*margin-block: 15rem;*/
+
+  display: grid;
+  grid-template-areas: 'header header' 'photo infos';
+}
+
+#dia15 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  grid-area: header;
+  font-size: 1.4rem;
+}
+
+#dia15 header button {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#dia15 header button .icon {
+  width: 2rem;
+}
+
+#dia15 header ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+#dia15 header ul li:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+#dia15 header .car-user svg {
+  width: 1.9rem;
+  margin-right: 1rem;
+}
+
+#dia15 header .car-user img {
+  width: 4rem;
+  border-radius: 4rem;
+}
+
+#dia15 .photos {
+  grid-area: photo;
+  margin-right: 2rem;
+  position: relative;
+  height: 58.1rem;
+
+  background-image: url('https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+  background-repeat: no-repeat;
+  width: 38.7rem;
+}
+
+#dia15 .photos:hover::after {
+  content: 'Mais fotos';
+  width: 100%;
+  height: 100%;
+  height: 58.1rem;
+  background-color: rgba(255, 255, 255, 0.648);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  cursor: pointer;
+}
+
+#dia15 .infos {
+  grid-area: infos;
+  align-self: center;
+}
+
+#dia15 .text {
+  margin-bottom: 2rem;
+}
+
+#dia15 .text h4 {
+  text-transform: uppercase;
+  color: orange;
+  font-size: 1.6rem;
+}
+
+#dia15 .text h2 {
+  font-size: 3rem;
+}
+
+#dia15 .text p {
+  color: gray;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+#dia15 .price div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#dia15 .price h3 {
+  font-size: 2.5rem;
+}
+
+#dia15 .price span {
+  color: orange;
+  background-color: rgb(255, 165, 0, 0.1);
+  font-size: 1.8rem;
+  border-radius: 0.7rem;
+  padding: 0.8rem;
+}
+
+#dia15 .price h4 {
+  font-size: 1.4rem;
+  position: relative;
+  color: grey;
+}
+
+#dia15 .price h4::after {
+  content: '';
+  height: 1px;
+  width: 6rem;
+  background-color: grey;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 1rem;
+}
+
+#dia15 .add-to-cart {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#dia15 .add-to-cart .counter {
+  width: 10rem;
+  background-color: rgb(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+}
+
+#dia15 .add-to-cart .counter span:nth-child(1) {
+  margin-right: 1rem;
+  color: orange;
+  cursor: pointer;
+}
+
+#dia15 .add-to-cart .counter span:nth-child(3) {
+  margin-left: 1rem;
+  color: orange;
+  cursor: pointer;
+}
+
+#dia15 .add-to-cart button {
+  padding: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+#dia15 .add-to-cart button:hover {
+  filter: brightness(1.2);
+}
+
+#dia15 .swiper-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  width: 100vw;
+  height: 100vh;
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+body.active #dia15 .swiper-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+#dia15 .swiper-container .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  #dia15 .menu {
+    position: fixed;
+    background-color: black;
+    color: white;
+    z-index: 101;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  body.menu-expanded #dia15 .menu {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #dia15 header button {
+    top: 1.6rem;
+    right: 4rem;
+
+    /*background-color: black;*/
+
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #dia15 .close-menu {
+    z-index: 101;
+    visibility: hidden;
+    opacity: 0;
+    background-color: black;
+  }
+
+  #dia15 .close-menu .icon {
+    fill: white;
+    stroke: white;
+  }
+
+  body.menu-expanded #dia15 .close-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #dia15 header .open-menu {
+    width: 2rem;
+    color: black;
+    left: 50%;
+  }
+
+  body.menu-expanded #dia15 .open-menu {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  #dia15 header ul {
+    flex-direction: column;
+  }
+
+  #dia15 .wrapper {
+    grid-template-areas: 'header header' 'photo photo' 'infos infos';
+    width: min(119rem, 95%);
+  }
 }

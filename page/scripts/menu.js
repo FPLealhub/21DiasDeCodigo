@@ -1,3 +1,3 @@
 function openMenu() {
-  document.querySelector('.menu').classList.toggle('open')
+  document.querySelector('#dia13 .menu').classList.toggle('open')
 }
