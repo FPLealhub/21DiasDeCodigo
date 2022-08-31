@@ -832,9 +832,7 @@ section {
 }
 
 #dia15 header button {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
+  display: none;
 
   border: none;
   background-color: transparent;
@@ -1058,16 +1056,13 @@ body.active #dia15 .swiper-container {
   }
 
   #dia15 header button {
-    top: 1.6rem;
-    right: 4rem;
-
-    /*background-color: black;*/
-
-    visibility: visible;
-    opacity: 1;
+    display: initial;
   }
 
   #dia15 .close-menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
     z-index: 101;
     visibility: hidden;
     opacity: 0;
@@ -1087,7 +1082,6 @@ body.active #dia15 .swiper-container {
   #dia15 header .open-menu {
     width: 2rem;
     color: black;
-    left: 50%;
   }
 
   body.menu-expanded #dia15 .open-menu {
