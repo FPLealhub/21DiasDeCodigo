@@ -855,9 +855,14 @@ section {
   cursor: pointer;
 }
 
+#dia15 header .car-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 #dia15 header .car-user svg {
   width: 1.9rem;
-  margin-right: 1rem;
 }
 
 #dia15 header .car-user img {
@@ -1030,6 +1035,15 @@ body.active #dia15 .swiper-container {
 }
 
 @media (max-width: 1024px) {
+  #dia15 .wrapper {
+    grid-template-areas: 'header header' 'photo photo' 'infos infos';
+    width: min(34.7rem, 100%);
+  }
+
+  #dia15 header {
+    padding-block: 1rem;
+  }
+
   #dia15 .menu {
     position: fixed;
     background-color: black;
@@ -1048,6 +1062,10 @@ body.active #dia15 .swiper-container {
 
     visibility: hidden;
     opacity: 0;
+  }
+
+  body.menu-expanded {
+    overflow: hidden;
   }
 
   body.menu-expanded #dia15 .menu {
@@ -1093,8 +1111,13 @@ body.active #dia15 .swiper-container {
     flex-direction: column;
   }
 
-  #dia15 .wrapper {
-    grid-template-areas: 'header header' 'photo photo' 'infos infos';
-    width: min(119rem, 95%);
+  #dia15 .photos {
+    margin: 0;
+    width: 100%;
+    background-size: cover;
+  }
+
+  #dia15 .swiper-slide img {
+    width: 80%;
   }
 }
