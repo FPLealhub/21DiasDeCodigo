@@ -1067,6 +1067,29 @@ body.active #dia15 .swiper-container {
   width: 32rem;
 }
 
+/*---------------------------dia 17 - Eventos Keyboard ----------------------*/
+#dia17 {
+  flex-direction: column;
+}
+
+#dia17 .events-key {
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+#dia17 .events-key h3 {
+  font-size: 3rem;
+  color: var(--purple);
+}
+
+#dia17 .events-key span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 @media (max-width: 1024px) {
   #dia15 .wrapper {
     grid-template-areas: 'header header' 'photo photo' 'infos infos';
