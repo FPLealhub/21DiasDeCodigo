@@ -11,7 +11,8 @@ function getUser() {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      userName.textContent = data.name
+      user.textContent = data.name
+      userName.innerHTML = `@${data.login}`
       userCity.href = data.html_url
       userCity.innerHTML = data.html_url
       userAvatar.src = data.avatar_url

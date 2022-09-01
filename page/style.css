@@ -1039,10 +1039,16 @@ body.active #dia15 .swiper-container {
   flex-direction: column;
   background-color: #084236;
 }
-#dia16 p {
-  font-size: 3rem;
+#dia16 p#user {
+  font-size: 4rem;
   color: var(--green);
+  margin-bottom: 2rem;
 }
+#dia16 p#userName {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
 #dia16 a {
   color: white;
   font-size: 1.5rem;
