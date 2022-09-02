@@ -885,7 +885,7 @@ section {
   content: 'Mais fotos';
   width: 100%;
   height: 100%;
-  height: 58.1rem;
+
   background-color: rgba(255, 255, 255, 0.648);
 
   display: flex;
@@ -1088,6 +1088,48 @@ body.active #dia15 .swiper-container {
 #dia17 .events-key span {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+/*-----------------Dia18 - Gerador de senhas-----------------*/
+#dia18 {
+  flex-direction: column;
+  background-color: #191919;
+  color: #00e5ff;
+}
+
+#dia18 header h1 {
+  font-size: 3rem;
+}
+
+#dia18 header {
+  margin-bottom: 2rem;
+}
+
+#dia18 div {
+  width: 34.3rem;
+  text-align: center;
+}
+
+#dia18 div button {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+#dia18 div button:hover {
+  color: orange;
+  border-color: orange;
+}
+
+#dia18 div span {
+  color: orange;
+  font-size: 2rem;
 }
 
 @media (max-width: 1024px) {
