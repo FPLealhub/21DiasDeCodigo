@@ -224,7 +224,6 @@
 
         <div class="balls">
           <div class="ball"></div>
-          <div class="ball"></div>
         </div>
         <!--botão para a page posterior-->
         <a href="#dia7" class="button-down">
@@ -812,6 +811,67 @@
           <span id="pass"></span>
         </div>
       </section>
+
+      <!--API unsplash-->
+      <section id="dia19">
+        <div class="wrapper">
+          <header>
+            <h1>Search Photo</h1>
+            <div id="search">
+              <input
+                placeholder="Pesquise uma imagem"
+                type="text"
+                id="pesquisa"
+              />
+              <input type="submit" value="Pesquisar" id="botaoPesquisar" />
+            </div>
+          </header>
+          <!--<div id="search-photo">
+            <input type="text" id="pesquisa" />
+            <input type="submit" value="Pesquisar" id="botaoPesquisar" />
+  
+          </div>-->
+          <div id="resultado"></div>
+        </div>
+      </section>
+
+      <!--Emoji picker-->
+      <section id="dia20">
+        <div class="container">
+          <header>
+            <h1>Emoji Picker</h1>
+          </header>
+          <div class="emoji">
+            <input id="angel" size="1" value="😇" />
+            <button id="copyAngel">Copiar</button>
+          </div>
+
+          <div class="emoji">
+            <input id="cute" size="1" value="😊" />
+            <button id="copyCute">Copiar</button>
+          </div>
+
+          <div class="emoji">
+            <input id="rir" size="1" value="🤣" />
+            <button id="copyRir">Copiar</button>
+          </div>
+
+          <div class="emoji">
+            <input id="happy" size="1" value="😁" />
+            <button id="copyHappy">Copiar</button>
+          </div>
+
+          <!--<input size="1" value="😅" />
+
+          <input size="1" value="😆" />
+          <input size="1" value="😁" />
+          <input size="1" value="😄" />
+          <input size="1" value="😃" />
+          <input size="1" value="&#x1F600;" />-->
+        </div>
+        <h2>Cole aqui!</h2>
+        <textarea name="txt1" id="txt1" cols="30" rows="10"></textarea>
+      </section>
     </main>
 
     <!--Calculadora-->
@@ -847,5 +907,11 @@
     <script src="./scripts/API.js"></script>
     <!--Gerador de senha-->
     <script src="./scripts/create-pass.js"></script>
+
+    <!--API unsplash-->
+    <script src="./scripts/img.js"></script>
+
+    <!--Emoji-picker-->
+    <script src="./scripts/emoji.js"></script>
   </body>
 </html>

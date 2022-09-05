@@ -1132,6 +1132,84 @@ body.active #dia15 .swiper-container {
   font-size: 2rem;
 }
 
+/*----------------------------dia 19 - API unsplash----------*/
+#dia19 {
+  display: inline-block;
+  margin-top: 10rem;
+}
+
+#dia19 .wrapper {
+  width: min(34.3rem, 100%);
+  margin-inline: auto;
+  position: relative;
+}
+
+#dia19 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  padding: 1rem;
+}
+
+#dia19 header #search {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#pesquisa {
+  padding: 1rem;
+  border-radius: 1rem;
+  outline: none;
+}
+
+#botaoPesquisar {
+  padding: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#botaoPesquisar:hover {
+  color: orange;
+}
+
+#dia19 img {
+  margin-top: 50%;
+
+  border: 8px solid black;
+}
+
+/*---------------------dia20 - container ---------------*/
+#dia20 {
+  flex-direction: column;
+  background-color: #131313;
+}
+
+#dia20 .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#dia20 .container header {
+  margin-bottom: 2rem;
+}
+
+#dia20 .container header h1 {
+  font-size: 3rem;
+  color: orange;
+}
+
+#dia20 h2 {
+  margin-top: 2rem;
+  color: white;
+}
+
 @media (max-width: 1024px) {
   #dia15 .wrapper {
     grid-template-areas: 'header header' 'photo photo' 'infos infos';
